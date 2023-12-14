@@ -8,6 +8,11 @@ import (
 
 type AppConfig struct {
 	DBConnectionString string
+	DBHost             string
+	DBPort             string
+	DBUsername         string
+	DBPassword         string
+	DBName             string
 	JWTSecret          string
 	// Add other configuration parameters as needed
 }
@@ -20,9 +25,13 @@ func LoadConfig() error {
 		return err
 	}
 
-	AppConf.DBConnectionString = os.Getenv("DB_CONNECTION_STRING")
+	AppConf.DBHost = os.Getenv("DB_HOST")
+	AppConf.DBPort = os.Getenv("DB_PORT")
+	AppConf.DBUsername = os.Getenv("DB_USERNAME")
+	AppConf.DBPassword = os.Getenv("DB_PASSWORD")
+	AppConf.DBName = os.Getenv("DB_NAME")
 	AppConf.JWTSecret = os.Getenv("JWT_SECRET")
-	// Load other config parameters
+	AppConf.DBConnectionString = ""
 
 	return nil
 }
