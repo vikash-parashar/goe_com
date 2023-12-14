@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/ecommerce/controllers"
+	"github.com/vikash-parashar/goe_com/controllers"
 )
 
 func SetupOrderRoutes(r *gin.Engine) {

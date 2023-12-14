@@ -4,7 +4,7 @@ import (
 	"database/sql"
 
 	_ "github.com/lib/pq"
-	"github.com/yourusername/ecommerce/config"
+	"github.com/vikash-parashar/goe_com/config"
 )
 
 var DB *sql.DB

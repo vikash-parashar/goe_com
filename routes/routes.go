@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/yourusername/ecommerce/middleware"
+	"github.com/vikash-parashar/goe_com/middleware"
 )
 
 func SetupRoutes() *gin.Engine {

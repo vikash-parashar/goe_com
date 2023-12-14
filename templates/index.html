@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Commerce Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            padding-top: 56px;
+            background-color: #ffffff;
+            background-image: url(./electronics\ all.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #cd6831;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .product h5 {
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Login/Register Modal Styles */
+        .modal-header,
+        .modal-footer {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .modal-content {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="/">Your Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/product/list">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#ordersModal">Orders</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal"
+                        data-target="#loginRegisterModal">Login/Register</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product List Section -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="bag.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="bag 2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Description of Product 2.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="camera.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Description of Product 3.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product entries as needed -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="camera 2.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="coffe-packet.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Description of Product 2.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="ear-phone-wireless 2.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Description of Product 3.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product entries as needed -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="ear-phone-wireless 3.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="ear-phone-wireless.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Description of Product 2.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card product">
+                    <img src="emo toy.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Description of Product 3.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product entries as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2023 Your E-Commerce Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div class="modal fade" id="loginRegisterModal" tabindex="-1" role="dialog"
+        aria-labelledby="loginRegisterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginRegisterModalLabel">Login/Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Login/Register Form Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders Modal -->
+    <div class="modal fade" id="ordersModal" tabindex="-1" role="dialog" aria-labelledby="ordersModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ordersModalLabel">Orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Orders List Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
